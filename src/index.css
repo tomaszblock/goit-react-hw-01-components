@@ -9,7 +9,59 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+p {
+  margin: 0px;
+}
+.root {
+  display: flex;
+  justify-content: center;
+
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+li {
+  list-style-type: none
+}
+
+.profile {
+display: flex;
+justify-content: center;
+ flex-direction: column;
+ max-width: 150px;
+ 
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+ max-height: 100px;
+  max-width: 100px; 
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+
+.tag {
+  display: flex;
+  justify-content: center;
+}
+.location {
+  display: flex;
+  justify-content: center;
 }
