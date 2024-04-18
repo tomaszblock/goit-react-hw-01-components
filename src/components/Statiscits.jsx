@@ -1,13 +1,17 @@
 import stats from '../json/data.json'
+import css from "../css/Statistics.module.css";
+import randomColor from 'randomcolor';
 
 
 const StatsProps = ({ props }) => {
+  const backgroundColors = props.map(() => randomColor()); 
+
   return (
-    <ul className="stat-list">
-      {props.map(prop => (
-        <li className="item">
-      <span className="label">{prop.label}</span>
-      <span className="percentage">{prop.percentage}</span>
+    <ul className={css.statsList}>
+      {props.map((prop, index) => (
+        <li className={css.item} style={{ backgroundColor: backgroundColors[index] }} key={index}>
+      <span className={css.label}>{prop.label}</span>
+      <span className={css.percentage}>{prop.percentage}%</span>
         </li>
       ))}
     </ul>
@@ -16,8 +20,8 @@ const StatsProps = ({ props }) => {
 
 export const Statistics = () => {
   return (
-    <section className="statistics">
-  <h2 className="title">Upload stats</h2>
+    <section className={css.statistics}>
+  <h2 className={css.title}>Upload stats</h2>
       <StatsProps props={stats} />
     </section>
   );
