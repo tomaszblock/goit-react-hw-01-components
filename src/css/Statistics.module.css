@@ -18,6 +18,7 @@
 .statsList {
   display: flex;
   justify-content: center;
+  color:white;
 }
 
 .item {
@@ -31,9 +32,15 @@
 .label {
 font-size: 10px;
 height: 20px;
+display: flex;
+justify-content: center;
+flex-direction: column;
   }
 
 .percentage {
   height: 30px;
   font-size: 15px;
+  display: flex;
+justify-content: center;
+flex-direction: column;
 }
