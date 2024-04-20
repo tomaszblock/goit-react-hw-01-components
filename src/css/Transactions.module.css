@@ -1,7 +1,28 @@
-.dupa {
-  background-color: blue;
+.even {
+  background-color: white;
 }
 
-.dupa2 {
-  background-color: yellow;
+.odd {
+  background-color: lightgray;
+}
+
+.topic {
+  text-transform: uppercase;
+  background-color: rgb(0, 128, 255);
+  color: white;
+  height: 50px;
+}
+
+.topic th {
+  width: 300px;
+}
+
+.type {
+  text-transform: capitalize;
+}
+
+.test {
+  color: grey;
+  text-align: center;
+  height: 50px;
 }
